@@ -3,9 +3,5 @@
 # - include at least one of these characters: !, @, $, %, &
 
 def valid?(password)
-    if password.length >= 8 && password =~ /[!@$%&]/
-        return true
-    else
-        return false
-    end
+    password.length >= 8 && password =~ /[!@$%&]/ ? true : false
 end
